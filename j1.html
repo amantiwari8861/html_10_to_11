@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></SCRIPT>
+<SCRIPT>
+function show() {
+$("#check").append("Required Field");//line 1
+}
+function hide(){
+$("#check").remove(); //line 2
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<INPUT type="text" name="firstName" id = "name" onfocus="show()" onblur= "hide()">
+//line 3
+<P ID="check"> </P>
+</BODY>
+</HTML>

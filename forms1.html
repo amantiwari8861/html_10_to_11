@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="Black" text="white" background="delhi.jpg">
+    <!-- <form action="" method="get" novalidate autocomplete="off"> -->
+    <form action="" method="get"  autocomplete="off">
+
+    <!-- Name : <input type="text"> -->
+    <label for="fname">
+        Name : 
+        <input type="text" id="fname" size="50" minlength="3" maxlength="6" required >
+    </label>
+
+    <!-- Data <input type="text" pattern="[0-9]{3,}" title="only numeric is acceptable"> -->
+    Data <input type="text" pattern="[A-Z]{4}[0-9]{3}[a-z]{2}" title="only numeric is acceptable">
+
+<input type="submit" value="Submit data">
+
+    </form>
+</body>
+</html>
