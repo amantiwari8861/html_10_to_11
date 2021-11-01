@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // function show(abc) {
+        // var num=document.getElementById('num1'); //gives object
+        // var num=document.getElementById('num1').value; //gives value
+        // var num=document.getElementsByClassName('inp')[0].value;
+        // var num=document.getElementsByTagName('input')[0].value;
+        // var num=document.getElementsByName('inputgroup')[0].value;
+        // alert(num);
+        // alert(abc);
+        // }
+        $document.ready(function show() {
+            document.getElementById('num1').slide();
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="num1" class="inp" name="inputgroup" >
+    <!-- <input type="button" value="Show" onclick="show();"> -->
+    <!-- <input type="button" value="Show" onclick="show(89);"> -->
+    <input type="button" value="Show" id="btn">
+
+    <!-- <input type="text" class="inp1"><br> represents 0th position
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br>
+    <input type="text" class="inp1"><br> -->
+</body>
+<script>
+    //    var button=document.getElementById('btn');
+    //     button.addEventListener('click',function show() {
+    //         var num=document.getElementById('num1').value;
+    //         alert(num)
+    //     });
+    // var button=document.getElementById('btn');
+    //     button.addEventListener('click',function() {
+    //         var num=document.getElementById('num1').value;
+    //         alert(num)
+    //     });
+    var button=document.getElementById('btn');
+        button.addEventListener('click',()=> {
+            var num=document.getElementById('num1').value;
+            alert(num)
+        });
+
+</script>
+</html>

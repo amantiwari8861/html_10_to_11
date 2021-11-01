@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            position: relative;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+        #box1:hover{
+            animation-name: anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        @keyframes anim {
+            0%{
+                background-color: aqua;
+                left: 0px;
+                top:0px
+            }
+            25%{
+                background-color: crimson;
+                top:300px;
+            }
+            50%{
+                background-color: blueviolet;
+                left:500px;
+                border-radius: 50%;
+
+            } 
+            75%{
+                background-color: yellowgreen;
+                top: 0px;
+            }
+            100%{
+                background-color: tomato;
+                left: 0px;
+                border-radius: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<div id="box1"></div>
+
+</body>
+</html>
