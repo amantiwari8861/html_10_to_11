@@ -11,8 +11,8 @@
         <legend>
             Supply Form 
         </legend>
-<form action="" method="post">
-    <label for="fname">First Name : 
+<form action="" method="post" autocomplete="off" >
+    <label for="fname">First Name<span style="color:red">*</span> : 
     <input type="text" id="fname" placeholder="Enter ur name"
      size="50" minlength="3" maxlength="5" title="Enter First name" required>
 </label><br>
@@ -25,7 +25,7 @@
         FeMale <input type="radio" name="gen">
         Trans <input type="radio" name="gen">
         Others <input type="radio" name="gen"><br>
-       email <input type="email" name="" id="">
+       email <input type="file" name="" id="">
        Phone No. <input type="tel" name="" id="">
        color<input type="color" name="" id=""><br>
         choose country
@@ -56,8 +56,7 @@
     <input type="submit" value="submit data"><br>
     <input type="reset" value="Clear"><br>
 
-
-
+       <button onclick="alert('button clicked');">click me</button>
 
 </form>
 </fieldset>

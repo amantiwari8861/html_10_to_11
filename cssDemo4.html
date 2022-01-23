@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Set Width Range for an Element</title>
+<style>
+    div#one {
+        float: left;
+        min-width: 500px;
+        max-width: 500px;
+        height: 100px;
+        background: #eee8aa;
+    } div#one:hover {
+       /* visibility: hidden; */
+       display: none;
+    }
+    div#two {
+        float: left;
+        width: 300px;
+        width: 500px;
+        height: 100px;
+        background: #4718f0;
+        clear: left;
+    }
+    body{
+        cursor: grab;
+    }
+</style>
+</head>
+<body bgcolor="black">	
+  	<p><strong>Note:</strong> The minimum width of the following div element will be 300px, and it can stretches horizontally up to 500px. Enter few lines of text inside the div element to understand how it works.</p>
+	<div id="one"></div> 
+	<div id="two"></div> 
+</body>
+</html>
