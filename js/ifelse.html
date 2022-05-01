@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check() {
+            var num = parseInt(document.getElementById('num').value);
+            /* if (num % 2 == 0) {
+                alert('Even');
+            } else {
+                alert('Odd');
+            } */
+            /* for (let i = 1; i <= num; i++)
+            {
+               document.getElementById('result').innerHTML += i + ' ';
+            } */
+            /* for (let i = 0; i < 5; i++) 
+            {
+                for(let j=0;j<=i;j++)
+                {
+                    document.getElementById('result').innerHTML += '*';
+                }
+                document.getElementById('result').innerHTML += '<br>';
+            } */
+            /* for (let i = 1; i <= num; i++) 
+            {
+                for (let k = 1; k <= i; k++) 
+                {
+                    document.getElementById('result').innerHTML += '&nbsp;&nbsp;';
+                }
+                for (let j = num; j >= i; j--) 
+                {
+                    document.getElementById('result').innerHTML += '*';
+                }
+                document.getElementById('result').innerHTML += '<br>';
+            }  */
+            // let name=["manoj","suresh","aman","preeti","prashant"];
+           /*  for(let i=0;i<name.length;i++)
+            {
+                document.getElementById('result').innerHTML += name[i] + '<br>';
+            } */
+            /* let fruits=[];
+            fruits[0]="apple";
+            fruits[1]="banana";
+            fruits[2]="mango";
+            fruits[3]="orange";
+            fruits.push("pineapple");
+            alert(fruits);
+            fruits.pop();
+            fruits.pop();
+            alert(fruits); */
+          /*   for(let i=0;i<fruits.length;i++)
+            {
+                document.getElementById('result').innerHTML += fruits[i] + '<br>';
+            } */
+            // let matrix=[3];
+            let matrix=new Array(3);
+            for(let i=0;i<3;i++)
+            {
+                // matrix[i]=[];
+                matrix[i]=new Array();
+                for(let j=0;j<3;j++)
+                {
+                    matrix[i][j]=i+j;
+                }
+            }
+            for(let i=0;i<3;i++)
+            {
+                for(let j=0;j<3;j++)
+                {
+                    document.getElementById('result').innerHTML += matrix[i][j] + ' ';
+                }
+                document.getElementById('result').innerHTML += '<br>';
+            }
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <label for="num">Number :
+        <input type="text" id="num">
+    </label>
+    <button onclick="check();">Click</button>
+    <p id="result"></p>
+</body>
+</html>
