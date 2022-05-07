@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>My Form</legend>
+    <form action="mailto:amantiwari8861@gmail.com" method="post"  autocomplete="off">
+
+        First Name : <input type="text" placeholder="Enter your name" required minlength="3" maxlength="10">
+        <br>
+        <label for="lname">
+            Last Name :
+            <input type="text" id="lname" placeholder="last name">
+        </label>
+        <br>
+        phone : <input type="number" placeholder="Enter your phone number" maxlength="10" minlength="10">
+        <br>
+        email : <input type="email" placeholder="Enter your email">
+        <br>
+        phone 2:<input type="tel">
+        <br>
+        password: <input type="password" name="" id="">
+        <br>
+        gender :
+        Male :<input type="radio" name="gen">
+        FeMale :<input type="radio" name="gen">
+        <br>
+        Course :
+        C <input type="checkbox">
+        C++ <input type="checkbox">
+        C# <input type="checkbox">
+        <br>
+        city : <select name="" id="">
+            <option value="">Select</option>
+            <option value="">Delhi</option>
+            <option value="">Mumbai</option>
+            <option value="">Kolkata</option>
+            <option value="">Banglore</option>
+        </select>
+        <br>
+        country : <input type="text" list="coun">
+        <datalist id="coun">
+            <option value="India"></option>
+            <option value="USA"></option>
+            <option value="UK"></option>
+            <option value="Canada"></option>
+            <option value="Australia"></option>
+        </datalist>
+        <br>
+        color : <input type="color">
+        <br>
+        comment :<br>
+        <textarea name="" id="" cols="30" rows="10">enter ur comment here</textarea>
+        <br>
+        DOB : <input type="date" name="" id="">
+        <br>
+        time: <input type="time" name="" id="">
+        <br>
+        upload :<input type="file" name="" id="">
+        <br>
+        <input type="button" value="this is a button">
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+</fieldset>
+</body>
+
+</html>
