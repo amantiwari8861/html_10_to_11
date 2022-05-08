@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #greet{
+            /* border: 1px solid green; */
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greet">Welcome to my Website!</h1>
+    <button onclick="changeColor('red');">color red</button>
+    <button onclick="changeColor('green');">color green</button>
+    <button onclick="changeBorderColor('6px solid yellow');">yellow border</button>
+
+    <script>
+        function changeColor(cname) 
+        {
+            let greet1=document.getElementById("greet");
+            // alert(greet1)
+            greet1.style.backgroundColor=cname; 
+        }
+       
+        function changeBorderColor(cname) 
+        {
+            let greet1=document.getElementById("greet");
+            greet1.style.border=cname; 
+        }
+
+        // let fruits=["strawberry","mango",10,12,20,45.788];
+        // if (fruits[0]=="mango") {
+        //     document.writeln("the fruit is mango");
+        // } else {
+        //     document.writeln("the fruit is strawberry");
+        // }
+        // if (fruits[3]>=18) {
+        //     document.writeln("it can vote");
+        // } else {
+        //     document.writeln("it can't vote");
+        // }
+        // let num=parseInt(prompt("enter the number :"));
+        // if (num>=18) {
+        //     document.writeln("it can vote");
+        // } else {
+        //     document.writeln("it can't vote");
+        // }
+        // for (let i = 0; i <num; i++) {
+        //     document.writeln(" num "+i+"<br>");
+        // }
+        // for (let key in fruits) {
+        //     document.writeln("key :"+key+"<br>");//printing index position of fruits array
+        // }
+        // for (let key of fruits) {
+        //     document.writeln("key :"+key+"<br>");//printing value at index position of fruits array
+        // }
+        // fruits.forEach(key => {
+        //     document.writeln("key :"+key+"<br>");//printing value at index position of fruits array
+        // });
+
+        // let animals=new Array();
+        // animals.push("rabbit");
+        // animals.push("cat");
+        // animals.push("bagh");
+        // animals.push("babbar sher");
+
+        // animals.sort();
+        // animals.forEach(e=>{
+        //     document.writeln(" animal "+e+"<br>");
+        // });
+    </script>
+</body>
+</html>

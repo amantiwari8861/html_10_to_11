@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+       <label for="num"> Number1:
+            <input type="text" id="num">
+        </label>
+        <label for="num2"> Number2:
+            <input type="text" id="num2">
+        </label>
+         <button onclick="abc()";>click me </button> 
+         <h1 id="result"> result </h1>
+
+         <script>
+            function abc() {
+             let num=parseFloat(document.getElementById('num').value);
+             let num2=parseFloat(document.getElementById('num2').value);
+             document.getElementById('result').innerHTML+=(num*num2);
+
+            }
+
+         </script>
+       
+   
+</body>
+
+</html>
