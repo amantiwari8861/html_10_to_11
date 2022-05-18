@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .square[class^="box"] {
+            position: absolute;
+            border: 3px dashed rgb(204, 255, 0);
+
+        }
+
+        .box1 {
+            background-color: red;
+            z-index: 1;
+            left: 100px;
+        }
+
+        .box2 {
+            background-color: rgb(57, 250, 102);
+            z-index: 2;
+            left: 200px;
+            top:50px;
+        }
+
+        .box3 {
+            background-color: rgb(93, 62, 244);
+            z-index: 3;
+            left: 300px;
+            top:100px;
+        }
+
+        .box4 {
+            background-color: rgb(248, 66, 193);
+            z-index: 4;
+            left: 400px;
+            top:150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="con">
+    <div class="box1 square"></div>
+    <div class="box2 square"></div>
+    <div class="box3 square"></div>
+    <div class="box4 square"></div>
+</div>
+</body>
+</html>

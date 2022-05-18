@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: darkviolet;
+            display: inline-block;
+            /* animation-name: myanim;
+            animation-duration: 2s; */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay: 5s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: reverse; */
+            /* animation-direction:alternate; */
+            /* animation-fill-mode: forwards; */
+            animation: myanim 2s ease-in 1s infinite alternate forwards;
+
+        }
+        @keyframes myanim {
+            /* from {
+                transform: translate(20px,20px);
+            }
+            to {
+                transform: translate(200px,300px);
+                border-radius: 100%;
+                background-color: goldenrod;
+            } */
+            0% {
+                transform: translate(20px,20px);
+            }
+            50% {
+                transform: translate(100px,100px);
+                background-color: chartreuse;
+            }
+            100% {
+                transform: translate(200px,300px);
+                border-radius: 100%;
+                background-color: goldenrod;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

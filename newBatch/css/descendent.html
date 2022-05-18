@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Descendant Selectors</title>
+    <style>
+        div.con1 h1 {
+            color: red;
+        }
+
+        .con2>h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="con1">
+        <h1>hello</h1>
+        <span>
+            <h1> hiii </h1>
+        </span>
+    </div>
+
+    <div class="con2">
+        <h1>hello 2.0</h1>
+        <span>
+            <h1> hiii 2.0</h1>
+        </span>
+    </div>
+</body>
+
+</html>
