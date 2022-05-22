@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">Click</button>
+    <script>
+
+        var btn = document.getElementById('btn');
+       
+        // function abc(){
+        //     // console.log('abc');
+        //     alert('abc fxn runs');
+        // };
+        // btn.addEventListener('click',abc);//callback function
+        // let fxn=function xyz(){ console.log('xyz fxn runs');  };
+        // let fxn=function(){ console.log('xyz fxn runs');  };
+        // let fxn=()=>{ console.log('xyz fxn runs');  };
+        // btn.addEventListener('click',fxn);
+        // btn.addEventListener('click',()=>{ console.log('xyz fxn runs');  });
+        // let greet=(name)=>{alert("Hello "+name);};
+        // greet('Aman');
+        let getName=()=>{return 'Aman';};
+        btn.addEventListener('click',()=>{ alert("Hello "+getName());  });
+
+
+    </script>
+
+</body>
+</html>

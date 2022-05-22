@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            background-color: #3610e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        <span class="con1">Hiii</span>
+        <span class="con2">Hello1</span>
+        <span class="con2">Hello2</span>
+        <span class="con2">Hello3</span>
+    </h1>
+
+    <script>
+        let con1 = document.getElementsByClassName('con1')[0];//object of con1
+        let con2 = document.getElementsByClassName('con2')[0];
+        let conarr=document.getElementsByClassName('con2');
+
+        // con1.addEventListener('click',function() {
+        //     alert("clicked on con1"); 
+        //     this.style.color = "red";
+        // })
+        // con2.onclick=function() { alert("clicked on con2"); this.style.color = "red"; }
+        // for(let i=0;i<conarr.length;i++)
+        // {
+        //     conarr[i].onclick=function() { alert("clicked on"+this.className+"["+i+"]"); this.style.color = "red"; }
+        // }
+        // alert(conarr.length);
+        // for(let i=0;i<conarr.length;i++)
+        // {
+        //     conarr[i].classList.add('background');
+        // }
+        // conarr[1].classList.remove('background');
+        // conarr[1].onclick=function(){
+        //     this.classList.toggle('background');
+        // }
+    //    let now=new Date();
+    //    alert(now);
+    // alert(now.getDate()+"/"+(now.getMonth()+1)+"/"+now.getFullYear());
+    // let stocks={
+    //     name:"Apple",
+    //     price:"100",
+    // }
+    // alert(stocks.name+" "+stocks.price);
+    let stocks = {
+    Fruits: ['Apple', 'banana', 'strawberry', 'papaya'],
+    liquid: ['water', 'ice'],
+    holder: ['cone', 'bowl', 'cup'],
+    toppings: ['chocolate', 'nuts', 'peanuts']
+    };
+
+    // alert(stocks.Fruits[0]);
+    alert("i like "+`${stocks.Fruits[0]}`+" with "+`${stocks.liquid[1]}`+" in "+`${stocks.holder[2]}`+" with "+`${stocks.toppings[0]}`+" topping");
+
+    </script>
+
+
+</body>
+
+</html>

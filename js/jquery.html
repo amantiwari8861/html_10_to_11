@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .background {
+            background-color: #3610e1;
+        }
+        </style>
+</head>
+<body>
+    
+    <h1 id="greet">Welcome to my Site</h1>
+    <button class="btn">Click</button>
+
+    <script>
+        $('.btn').click(function(){
+            // $('h1').css('color','red');
+            // $(h1).css('color','red'); //not work
+            let greet=document.getElementById('greet');
+            // $(greet).css('color','red');
+            // greet.style.color='red';
+            // $('#greet').css('color','red');
+            // $(greet).toggleClass('background');
+            // $(greet).fadeToggle(1000);
+            $(greet).slideToggle(1000);
+        })
+    </script>
+</body>
+</html>
