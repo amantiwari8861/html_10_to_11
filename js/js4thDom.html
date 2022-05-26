@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num">Number :
+    <input type="text" id="num">
+    </label>
+    <label for="num2">Number2 :
+    <input type="text" id="num2">
+    </label>
+    <button onclick="add()">Add</button>
+    <h1 id="result">the result is :</h1>
+</body>
+<script>
+
+function add() 
+{
+    let num1=parseInt(document.getElementById("num").value);
+    let num2=parseInt(document.getElementById("num2").value);
+    let result=num1+num2;
+    // alert("result :"+result);
+    // document.getElementById("result").innerHTML=result;
+    document.getElementById("result").innerHTML+=result;
+    //sum=sum+10 ;  or sum+=10;
+}
+</script>
+</html>

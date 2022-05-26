@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let add=function sum(a,b){let result;result=a+b;return result;};
+        // let add=function(a,b){let result;result=a+b;return result;};//anonymous function
+        // let add=(a,b)=>{let result;result=a+b;return result;};//arrow function
+        // let result=add(10,20);
+        // let result2=add(30,80);
+        // alert("result :"+result);
+        // alert("result2 :"+result2);
+        // alert(Math.PI);
+        // alert(Math.max(10,20,80,40,50));
+        // alert(Math.min(10,60,20,80,40,50));
+        // alert(Math.min(...[10,60,20,80,40,50]));
+
+        function greet(num) {
+            
+            if(num>0)
+            {
+                console.log(" num :"+num);
+                return greet(num-1);
+            }
+        }
+    </script>
+    <button onclick="greet(5)">click</button>
+</body>
+</html>
