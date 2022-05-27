@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            display:none;
+        }
+        .color{
+            color:green;
+        }
+    </style>
+</head>
+<body >
+    
+<input type="number" id="num">
+<button onclick="makeTable();">Get Table</button>
+<div id="result">The table is :</div>
+<script>
+    function makeTable() {
+        let num=document.getElementById('num').value;
+        let con1=document.getElementById('result');
+        con1.style.display="block";
+        // con1.style.backgroundColor="greenyellow";
+        // document.body.innerHTML+="hello";
+        // document.write("Hello"); not suitable
+        // document.write("hii"); not suitable
+        // let page=document.body;
+        // page.bgColor="green";
+        let tabl=document.createElement("table");
+        tabl.border="2";
+        tabl.cellPadding="5";
+        tabl.classList.add("color");
+        con1.append(tabl);
+        // page.append(tabl);
+        for (let i = 1; i <=10; i++) 
+        {
+            tabl.innerHTML+="<tr><td>"+num+"</td><td>X</td><td>"+i+"</td><td>=</td><td>"+num*i+"</td></tr>"
+        }
+        // let h1=document.createElement("h1");
+        // con1.append(h1);
+        // h1.innerText="welcome !";
+        // let txt=document.createTextNode("hiii");
+        // con1.append(txt);
+
+
+    }
+</script>
+</body>
+</html>
