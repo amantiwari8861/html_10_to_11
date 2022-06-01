@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        document.body.style.fontSize="40px";
+        document.body.style.textAlign="center";
+        let subjects=["English","Maths","Science","Biology","Hindi","Physics"];
+
+        for (let i = 0; i < subjects.length; i++) 
+        {
+                document.write(subjects[i]+" : <input type='text' id='"+subjects[i]+"'><br><br>");    
+        }
+        document.write("<button onclick='calculate()'>Calculate</button>");
+
+        function calculate()
+        {
+            let total=0;
+            for (let i = 0; i < subjects.length; i++) 
+            {
+                let marks=parseInt(document.getElementById(subjects[i]).value);
+                total+=marks;
+            }
+            let percentage=(total/(subjects.length*100))*100;
+            // document.write("<br><br>Total Marks : "+subjects.length*100);
+            // document.write("<br>Total Marks Obtained : "+total);
+            // document.write("<br>Percentage : "+percentage+"%");
+            let result=document.createElement("div");
+            result.id="res";
+            document.body.append(result);
+            // document.getElementById("res").innerHTML="<br><br>Total Marks of all subject : "+subjects.length*100;
+            let meradiv=document.getElementById('res');
+            meradiv.innerHTML+="<br><br>Total Marks : "+subjects.length*100;
+            meradiv.innerHTML+="<br>Total Marks Obtained : "+total;
+            meradiv.innerHTML+="<br>Percentage : "+percentage+"%";
+
+            if (percentage>=90 && percentage<=100) 
+            {
+                meradiv.innerHTML+="<br>Grade : A+";
+            }
+            else if(percentage>=80 && percentage<90)
+            {
+                meradiv.innerHTML+="<br>Grade : A";
+            }
+            else if(percentage>=70 && percentage<80)
+            {
+                meradiv.innerHTML+="<br>Grade : B";
+            }
+            else if(percentage>=60 && percentage<70)
+            {
+                meradiv.innerHTML+="<br>Grade : C";
+            }
+            else if(percentage>=50 && percentage<60)
+            {
+                meradiv.innerHTML+="<br>Grade : D";
+            }
+            else if(percentage>=40 && percentage<50)
+            {
+                meradiv.innerHTML+="<br>Grade : E";
+            }
+            else if(percentage>=0 && percentage<40)
+            {
+                meradiv.innerHTML+="<br>Grade : Fail !!! Better luck next time";
+            }
+            else
+            {
+                meradiv.innerHTML+="<br>Invalid Input";
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!--/* var gradeCalculator = {
+    // Grades
+    grades: [],
+    // Add grade
+    addGrade: function(grade) {
+        this.grades.push(grade);
+    },
+    // Get average
+    getAverage: function() {
+        var total = 0;
+        for (var i = 0; i < this.grades.length; i++) {
+            total += this.grades[i];
+        }
+        return total / this.grades.length;
+    },
+    // Get letter grade
+    getLetterGrade: function() {
+        var average = this.getAverage();
+        if (average >= 90) {
+            return 'A';
+        } else if (average >= 80) {
+            return 'B';
+        } else if (average >= 70) {
+            return 'C';
+        } else if (average >= 60) {
+            return 'D';
+        } else {
+            return 'F';
+        }
+    }
+};
+// Add grades
+gradeCalculator.addGrade(95);
+gradeCalculator.addGrade(80);
+gradeCalculator.addGrade(60);
+// Get average
+var average = gradeCalculator.getAverage();
+console.log(average);
+// Get letter grade
+var letterGrade = gradeCalculator.getLetterGrade();
+console.log(letterGrade); */-->

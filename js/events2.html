@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="fxn(this)">Welcome to my website !</h1>
+    <script>
+          function fxn(ref) {
+            console.log(ref);
+            console.log('Fxn is called');
+            ref.style.fontSize = "80px";
+            ref.style.fontFamily = "Cursive";
+        }
+        // document.querySelector('h1').onclick = function abc() {
+        //     this.style.color = "red";
+        // }
+
+        //in h1 tag we added onclick event to call fxn() (through html)
+        //then we replaced the onclick property with a function abc() which is styling the h1 tag (through js)) 
+
+        document.querySelector('h1').addEventListener('click', function(){
+            this.style.backgroundColor = "greenyellow";
+        })
+      
+    </script>
+</body>
+
+</html>

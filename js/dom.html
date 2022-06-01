@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Difference between .append() and .appendChild()
+        // .append accepts Node objects and DOMStrings 
+        // while .appendChild accepts only Node objects
+
+        const parent = document.createElement('div');
+        const child = document.createElement('p');
+        // Appending Node Objects
+        parent.append(child) // Works fine looks like <div><p></p></div>
+        parent.appendChild(child) // Works fine looks like <div><p></p></div>
+        // Appending DOMStrings
+        parent.append('Hello world') // Works fine looks like <div>Hello world</div>
+        // parent.appendChild('Hello world') // Throws error
+        document.body.append(parent) // Works fine looks like <body><div><p></p></div></body>
+    
+        let text= document.createTextNode('Hello Hemant');
+        child.appendChild(text);
+
+    </script>
+</body>
+</html>

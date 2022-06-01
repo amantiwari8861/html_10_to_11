@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            background-color: darkslateblue;
+        }
+        .font{
+            font-family: cursive;
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1 onmouseover=" styleLogo()">Logo</h1> -->
+    <!-- <h1 onclick="styleLogo()">Logo</h1>  -->
+    <h1 onclick="styleLogo(this)">Logo</h1> 
+    <!-- this represents the current object-->
+<script>
+    function styleLogo(logoref) {
+       
+        // document.querySelector('h1').style.color = 'red';
+        // document.querySelector('h1').style.backgroundColor = 'greenyellow';
+        // logoref.style.color="red";
+        // logoref.setAttribute('class','background font');
+        //Attribute - variable
+        // the above action effect like this <h1 onclick="styleLogo(this)" class="background font">Logo</h1>
+        // logoref.setAttribute('style','background-color: greenyellow');
+        //<h1 onclick="styleLogo(this)" style="background-color: greenyellow" class="background font">Logo</h1>
+    }
+</script>
+</body>
+</html>
