@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Guys!</h1>
+    <button id="ani">Animate</button>
+    <button id="stp">Stop</button>
+    
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#ani').click(function(){
+        $('h1').animate({
+            fontSize: '40px',
+            top:'100px',
+            left: '500px',
+            opacity: '0.5'
+        }, 3000);
+    });
+    $('#stp').click(function(){
+        $('h1').stop();
+    });
+});
+
+</script>
+</html>

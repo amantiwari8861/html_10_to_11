@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".text").click(function () {
+                //($("p").text());
+                $("p").text("no text");
+            });
+            $(".html").click(function () {
+                $("p").html("<b>this is p</b>");
+            });
+
+            $(".value").click(function () {
+                $(".inpClass").val("hi");
+                var text = $('.inpClass').val();
+                $('#new').text(text);
+            });
+            $(".attr").click(function () {
+                $(".inpClass").attr("type", "text");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="para">Lorem ipsum dolor sit amet<span style="color:red"> Hello bro </span> consectetur adipisicing elit. Eos,
+        possimus.</p>
+    <input type="password" class="inpClass" value="Hello"><br>
+    <input type="button" class="text" value="text"><br>
+    <input type="button" class="html" value="html"><br>
+    <input type="button" class="value" value="value"><br>
+    <input type="button" class="attr" value="attr"><br>
+
+    <textarea id="new" cols="30" rows="10"></textarea>
+
+</body>
+
+</html>
